@@ -2,7 +2,7 @@
  This program provide a convenient way to use LCD1602 and lirc on Raspberry Pi.
 ## Usage:
 ### ___def newThread___
-\t Decorator,used if you would like to run the function by starting a new thread.
+&nbsp;&nbsp;&nbsp;&nbsp;Decorator,used if you would like to run the function by starting a new thread.
 ### ___class BOARD___  
 &nbsp;&nbsp;&nbsp;&nbsp;`def get(self,num:int)->byte(0|1):`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return the value of a pin,coded as GPIO.BOARD.  
@@ -39,15 +39,20 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;`def AskForInput(self, irc, callback):`    
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This function asks the user for a input:it will return a (large) integer since the remoter can .irc is your irC receiver,callback is a function which is called at the end of inputing.  
-### These are the usage of controller.py.The following classes are from callables.py.As its name,all classes from it can be called(has the __call__ method).
+### These are the usage of controller.py.The following classes are from callables.py.As its name,all classes from it can be called(has the \_\_call\_\_ method).
 ### NOTE: LineEdit,Text are in this file.
 
 ### ___class Outputable___
 > This class is a void class,as it has no useful things.The only use of it is that every class whose objects can print on the LCD1602 should be a subclass of Outputable.Outputable lets every Outputable Class realize that `select` and `now` should be re-writed.
-> `run`is not neccessary for Outputable
+> However,the normal uses for `select` and `now` are as follows.
+> NOTE:`run`is not neccessary for Outputable.
+
+&nbsp;&nbsp;&nbsp;&nbsp;`def select(self) -> LineEdit:`    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Usually,it's only called when it's on the top of the screen.
+&nbsp;&nbsp;&nbsp;&nbsp;`def now(self) -> str:`    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return the currect string.
+> As the string may change(timer),the now method is neccessary.
 
 ### ___class Text___
-&nbsp;&nbsp;&nbsp;&nbsp;`def select(self) -> LineEdit:`    
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Usually,it's only called when it's on the top of the screen. 
 &nbsp;&nbsp;&nbsp;&nbsp;`def run(self):`    
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Like the home button on your phone,it lets LCD1602 back to the mainmenu(the LineEdit sent in \_\_init\_\_). 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It runs after `select`,but before `select` returns.
