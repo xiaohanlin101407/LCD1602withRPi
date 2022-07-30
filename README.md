@@ -19,7 +19,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;forever print self on the LCDScreen.  
 &nbsp;&nbsp;&nbsp;&nbsp;`def print(self,y,x,data):`    
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print data,cursor on (x,y).Usually,it's only called in foreverprint.  
-> Q:Why (y,x),not (x,y)? A:Because y->line!(The author's weird idea!)    
+> Q:Why (y,x),not (x,y)? A:Because y->line!(The author's weird idea!)   <br> 
 &nbsp;&nbsp;&nbsp;&nbsp;`def submenu(self,LineEdit):`    
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Just one LineEdit cannot meet the requirements of the real work.try submenu to create the submenu of the currect menu,and set its parent as the currect menu.    
 &nbsp;&nbsp;&nbsp;&nbsp;`def Back(self):`    
