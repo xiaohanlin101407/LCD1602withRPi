@@ -48,7 +48,7 @@
 > NOTE:`run`is not neccessary for Outputable.
 
 &nbsp;&nbsp;&nbsp;&nbsp;`def select(self) -> LineEdit:`    
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Usually,it's only called when it's on the top of the screen.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Usually,it's only called when it's on the top of the screen.  
 &nbsp;&nbsp;&nbsp;&nbsp;`def now(self) -> str:`    
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return the currect string.
 > As the string may change(timer),the now method is neccessary.
@@ -58,4 +58,11 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It runs after `select`,but before `select` returns.
 
 ### ___class LineEdit___
-&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;`def __call__(self)`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return self.  
+&nbsp;&nbsp;&nbsp;&nbsp;`def setParent(self,parent)`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return self,whose parent is parent.  
+&nbsp;&nbsp;&nbsp;&nbsp;`def get(self,num)`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return the text with the index of self.Vcursor+num viewing by the self.Hcursor  
+&nbsp;&nbsp;&nbsp;&nbsp;`def now(self)`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return strings which should be printed now on LCD1602.    
