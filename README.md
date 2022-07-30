@@ -39,3 +39,9 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This function asks the user for a input:it will return a (large) integer since the remoter can .irc is your irC receiver,callback is a function which is called at the end of inputing.  
 ### These are the usage of controller.py.The following classes are from callables.py.As its name,all classes from it can be called(has the __call__ method).
 ### NOTE: LineEdit,Text are in this file.
+
+### ___class Outputable___
+> This class is a void class,as it has no useful things.The only use of it is that every class whose objects can print on the LCD1602 should be a subclass of Outputable.Outputable lets every Outputable Class realize that `select` and `now` should be re-writed.
+> `run`is not neccessary for Outputable
+
+### ___class Text___
