@@ -32,6 +32,8 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Like the home button on your phone,it lets LCD1602 back to the mainmenu(the LineEdit sent in \_\_init\_\_).  
 &nbsp;&nbsp;&nbsp;&nbsp;`def select(self,):`    
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If,somehow,the LineEdit is "clicked"(selected),self.LineEdit will be set to LineEdit.cursor.select(),which means the top TextObject's LineEdit returned in its select function.  
+
 > It can be seen as "show the submenu of the Text on the top"     
+
 &nbsp;&nbsp;&nbsp;&nbsp;`def print(self,y,x,data):`    
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print data,cursor on (x,y).Usually,it's only called in foreverprint.  
