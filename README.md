@@ -1,6 +1,8 @@
 # LCD1602withRPi
  This program provide a convenient way to use LCD1602 and lirc on Raspberry Pi.
 ## Usage:
+### ___def newThread___
+\t Decorator,used if you would like to run the function by starting a new thread.
 ### ___class BOARD___  
 &nbsp;&nbsp;&nbsp;&nbsp;`def get(self,num:int)->byte(0|1):`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return the value of a pin,coded as GPIO.BOARD.  
@@ -45,3 +47,7 @@
 > `run`is not neccessary for Outputable
 
 ### ___class Text___
+&nbsp;&nbsp;&nbsp;&nbsp;`def select(self) -> LineEdit:`    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Usually,it's only called when it's on the top of the screen. 
+&nbsp;&nbsp;&nbsp;&nbsp;`def run(self):`    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Like the home button on your phone,it lets LCD1602 back to the mainmenu(the LineEdit sent in \_\_init\_\_). 
