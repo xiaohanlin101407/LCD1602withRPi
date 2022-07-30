@@ -56,3 +56,6 @@
 ### ___class Text___
 &nbsp;&nbsp;&nbsp;&nbsp;`def run(self):`    
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It runs after `select`,but before `select` returns.
+
+### ___class LineEdit___
+&nbsp;&nbsp;&nbsp;&nbsp;
