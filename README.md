@@ -25,9 +25,9 @@
 > Q:Why (y,x),not (x,y)? A:Because y->line!(The author's weird idea!)   
 
 &nbsp;&nbsp;&nbsp;&nbsp;`def submenu(self,LineEdit):`    
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Just one LineEdit cannot meet the requirements of the real work.try submenu to create the submenu of the currect menu,and set its parent as the currect menu.    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Just one LineEdit cannot meet the requirements of the real work.try submenu to create the submenu of the current menu,and set its parent as the current menu.    
 &nbsp;&nbsp;&nbsp;&nbsp;`def Back(self):`    
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;set the currect LineEdit as its parent.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;set the current LineEdit as its parent.  
 &nbsp;&nbsp;&nbsp;&nbsp;`def popen(self,LineEdit,time_):`    
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;show a popen(LineEdit),showing time=time_  
 &nbsp;&nbsp;&nbsp;&nbsp;`def mainmenu(self):`    
@@ -50,11 +50,14 @@
 &nbsp;&nbsp;&nbsp;&nbsp;`def select(self) -> LineEdit:`    
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Usually,it's only called when it's on the top of the screen.  
 &nbsp;&nbsp;&nbsp;&nbsp;`def now(self) -> str:`    
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return the currect string.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return the current string.
 > As the string may change(timer),the now method is neccessary.
 ### ___class StaticText___
 > This class's object has static text.That means no matter what your HCursor is,Its `now` returns the same string,which is the one you let it to be in the \_\_init\_\_ method.
-> It's so hard to change it.However,you can try obj.now=lambda :StaticText.StaticStr(yourNewString)
+> It's so hard to change it.However,you can try obj.now=lambda :StaticText.StaticStr(yourNewString).As you can see,it's complex.
+
+### ___class timer___
+> Create an `outputable` whose `now` is the current time.
 
 ### ___class Text___
 &nbsp;&nbsp;&nbsp;&nbsp;`def run(self):`    
