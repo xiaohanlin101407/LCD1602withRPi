@@ -92,4 +92,8 @@
 ## EditSuffix: a list,its only content is StaticText("---End Of Menu--").
 ## noMenuPopen: usually it's a popen to tell users there's no submenu of the selected.
 ## Inputable: show all inputable ascii chars.
-## 
+## FuncHasNoReturn: for those which do not show anything,but have functions to run,their submenus are this.
+### ___def FuncText___
+> return a Text that described in `FuncHasNoReturn`.
+
+## SystemMenu: show system options.
