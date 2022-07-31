@@ -1,8 +1,8 @@
-# LCD1602withRPi
+# LCD1602 with RPi
  This program provide a convenient way to use LCD1602 and lirc on Raspberry Pi.
 ## Usage:
 ### ___def newThread___
-&nbsp;&nbsp;&nbsp;&nbsp;Decorator,used if you would like to run the function by starting a new thread.
+> Decorator,used if you would like to run the function by starting a new thread.
 ### ___class BOARD___  
 &nbsp;&nbsp;&nbsp;&nbsp;`def get(self,num:int)->byte(0|1):`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return the value of a pin,coded as GPIO.BOARD.  
@@ -82,3 +82,14 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;move self.HCursor left(no less than 0).   
 &nbsp;&nbsp;&nbsp;&nbsp;`def moveRight(self)`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;move self.HCursor right.   
+
+### ___def FileEdit___
+> Return a Text with the string of its name
+> If it's a file,its `select` is a LineEdit with `Read` and `Binary Read`.If it ends with .py/.sh,`Run...` will in the list.
+> If it's a folder,its `select` is a LineEdit with all of its files (and subfolders) in it.  
+
+## Blank: a 16-space Text.
+## EditSuffix: a list,its only content is StaticText("---End Of Menu--").
+## noMenuPopen: usually it's a popen to tell users there's no submenu of the selected.
+## Inputable: show all inputable ascii chars.
+## 
