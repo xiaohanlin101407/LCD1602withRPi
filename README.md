@@ -66,3 +66,13 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return the text with the index of self.Vcursor+num viewing by the self.Hcursor  
 &nbsp;&nbsp;&nbsp;&nbsp;`def now(self)`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return strings which should be printed now on LCD1602.    
+&nbsp;&nbsp;&nbsp;&nbsp;`def append(self,text:Text)`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add Text to be printed.   
+&nbsp;&nbsp;&nbsp;&nbsp;`def moveUp(self)`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;move self.VCursor up(no less than 0).   
+&nbsp;&nbsp;&nbsp;&nbsp;`def moveDown(self)`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;move self.VCursor down(no more than len(self.texts-1)).   
+&nbsp;&nbsp;&nbsp;&nbsp;`def moveLeft(self)`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;move self.HCursor left(no less than 0).   
+&nbsp;&nbsp;&nbsp;&nbsp;`def moveRight(self)`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;move self.HCursor right.   
