@@ -52,6 +52,9 @@
 &nbsp;&nbsp;&nbsp;&nbsp;`def now(self) -> str:`    
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return the currect string.
 > As the string may change(timer),the now method is neccessary.
+### ___class StaticText___
+> This class's object has static text.That means no matter what your HCursor is,Its `now` returns the same string,which is the one you let it to be in the \_\_init\_\_ method.
+> It's so hard to change it.However,you can try obj.now=lambda :StaticText.StaticStr(yourNewString)
 
 ### ___class Text___
 &nbsp;&nbsp;&nbsp;&nbsp;`def run(self):`    
