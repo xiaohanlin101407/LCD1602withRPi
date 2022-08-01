@@ -97,3 +97,13 @@
 > return a Text that described in `FuncHasNoReturn`.
 
 ## SystemMenu: show system options.
+> contains: Shutdown, Reboot, Exit.
+
+### These are the usage of callables.py.The following classes are from system.py.This contains system interfaces that can be called by python programs.
+## run: run your scripts(*.py/*.sh)
+## boot: shutdown or reboot your system.
+### ___def addWIFIoption___
+> add the default wifi(s).
+
+### ___def hash___
+> a very strong hash function.cannot beat it.
