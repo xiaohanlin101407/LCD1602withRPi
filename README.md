@@ -88,20 +88,20 @@
 > If it's a file,its `select` is a LineEdit with `Read` and `Binary Read`.If it ends with .py/.sh,`Run...` will in the list.
 > If it's a folder,its `select` is a LineEdit with all of its files (and subfolders) in it.  
 
-## Blank: a 16-space Text.
-## EditSuffix: a list,its only content is StaticText("---End Of Menu--").
-## noMenuPopen: usually it's a popen to tell users there's no submenu of the selected.
-## Inputable: show all inputable ascii chars.
-## FuncHasNoReturn: for those which do not show anything,but have functions to run,their submenus are this.
+### Blank: a 16-space Text.
+### EditSuffix: a list,its only content is StaticText("---End Of Menu--").
+### noMenuPopen: usually it's a popen to tell users there's no submenu of the selected.
+### Inputable: show all inputable ascii chars.
+### FuncHasNoReturn: for those which do not show anything,but have functions to run,their submenus are this.
 ### ___def FuncText___
 > return a Text that described in `FuncHasNoReturn`.
 
-## SystemMenu: show system options.
+### SystemMenu: show system options.
 > contains: Shutdown, Reboot, Exit.
 
 ### These are the usage of callables.py.The following classes are from system.py.This contains system interfaces that can be called by python programs.
-## run: run your scripts(*.py/*.sh)
-## boot: shutdown or reboot your system.
+### run: run your scripts(*.py/*.sh)
+### boot: shutdown or reboot your system.
 ### ___def addWIFIoption___
 > add the default wifi(s).
 
